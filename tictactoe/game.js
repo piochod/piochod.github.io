@@ -17,10 +17,10 @@ function init(player, OPPONENT){
 
     // load X & O images
     const xImage = new Image();
-    xImage.src = "img/X.png";
+    xImage.src = "X.png";
 
     const oImage = new Image();
-    oImage.src = "img/O.png";
+    oImage.src = "O.png";
 
     // Win combinations
     const COMBOS = [
@@ -248,7 +248,7 @@ function init(player, OPPONENT){
     // SHOW GAME OVER
     function showGameOver(player){
         let message = player == "tie" ? "No winner this time" : "The Winner is";
-        let imgSrc = `img/${player}1.png`;
+        let imgSrc = `${player}1.png`;
 
         gameOverElement.innerHTML = `
             <h1>${message}</1>
